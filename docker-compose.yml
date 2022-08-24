@@ -2,8 +2,10 @@ version: "3"
 services:
   app:
     build: .
-    image: image-name
+    image: rather-labs
     volumes:
       - .:/app
     ports:
       - 8000:8000
+    environment:
+      - provider=wss://api-pub.bitfinex.com/ws/2
