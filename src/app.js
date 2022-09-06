@@ -1,3 +1,5 @@
-import { start } from './server/server';
+import { startServer } from './deliveries/express/server';
+
 /** START SERVER **/
-start();
+
+startServer();
