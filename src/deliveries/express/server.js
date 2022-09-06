@@ -12,7 +12,7 @@ app.use(morgan('dev'));
 
 const port = 3000;
 
-export const start = () => {
+export const startServer = () => {
   app.listen(port, () => {
     console.log(`REST API on http://localhost:${port}`);
   });
